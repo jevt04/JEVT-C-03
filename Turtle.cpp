@@ -1,4 +1,6 @@
 #include <string>
+#include <iostream>
+using namespace std;
 
 class Turtle{
     
@@ -9,6 +11,9 @@ public:
         if (!isBedLover || coolnessRating< 500000){
             // Turtles are so cool, they love beds!
             throw new std::bad_alloc;
+        }
+        else {
+            cout << "Turtle " << this->coolnessRating << " is not comfy in the bed :(" << endl;
         }
         this->isBedLover = isBedLover;
         this->coolnessRating = coolnessRating;
